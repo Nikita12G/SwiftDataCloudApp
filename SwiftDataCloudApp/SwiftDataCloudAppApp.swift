@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct SwiftDataCloudAppApp: App {
@@ -13,5 +14,6 @@ struct SwiftDataCloudAppApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Contact.self], isUndoEnabled: true)
     }
 }
